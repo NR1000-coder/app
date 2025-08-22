@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="app">
       <h1>{a}</h1>
-      <button onClick={() => seta((t)=>b+"Nərminəm")}>0</button>
-      <button onClick={() => seta((t)=>c+"əlaçıyam")}>1</button> 
-      <button onClick={() => seta((t)=>d+"yaxşı oxuyanam")}>2</button>
-      <button onClick={() => seta((t)=>e+"orta oxuyanam")}>3</button>
+      <button onClick={() => seta((a)=>b+"Nərminəm")}>0</button>
+      <button onClick={() => seta((a)=>c+"əlaçıyam")}>1</button> 
+      <button onClick={() => seta((a)=>d+"yaxşı oxuyanam")}>2</button>
+      <button onClick={() => seta((a)=>e+"orta oxuyanam")}>3</button>
     </div>
   );
 }
