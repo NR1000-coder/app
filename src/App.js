@@ -1,26 +1,17 @@
 import { useState } from "react";
 
-function Me() {
-  const [option, setOption] = useState()
+function App() {
 
+  const [a, seta] = useState(10)
   return (
-    <>
-      <h1>Salam mən {option}</h1>
-      <button type="button" 
-      onClick={() => setOption("Nərminəm.")}
-      >0</button>
-      <button type="button"
-      onClick={() => setOption("əlaçıyam.")}
-      >1</button>
-      <button type="button"
-      onClick={() => setOption("yaxşı oxuyanam.")}
-      >2</button>
-      <button type="button"
-      onClick={() => setOption("orta oxuyanam.")}
-      >3</button>
-    </>
+    <div className="app">
+      <h1>{a}</h1>
+      <button onClick={() => seta((t)=>t+5)}>+</button>
+      <button onClick={() => seta((t)=>t-5)}>-</button>  
+    </div>
   );
 }
 
-export default Me;
+export default App;
+
 
